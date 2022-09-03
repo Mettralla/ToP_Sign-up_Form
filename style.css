@@ -25,9 +25,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 0;
-}
 ol, ul {
 	list-style: none;
 }
@@ -51,8 +48,10 @@ table {
 	src: url(./font/Norse-Bold.otf);
 }
 
-.login {
+.login,body {
 	display: flex;
+	flex-direction: row;
+	background-color: rgb(243, 241, 241);
 }
 
 .background {
@@ -87,12 +86,13 @@ table {
 	flex-direction: row;
 	align-items: center;
 	margin-left: 8vw;
+	margin-right: 8vw;
 	height: 25vh;
 }
 
 .logo {
 	display: flex;
-	height: 18vh;
+	height: 10vw;
 	width: auto;
 }
 
@@ -102,4 +102,19 @@ table {
 	font-family: Norse-Bold, sans-serif;
 	color: white;
 	font-size: 11vw;
+	line-height: 0;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.front_section {
+	display: flex;
+	background-color: white;
+}
+
+.back_section {
+	display: flex;
 }
